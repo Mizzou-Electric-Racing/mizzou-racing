@@ -1,0 +1,229 @@
+.overview-container {
+    position: relative;
+    margin-top: 18vh;
+    margin-left: 1vw;
+}
+
+.overview-header {
+    position: relative;
+}
+
+.overview-header img {
+    position: fixed;
+    z-index: -5;
+    top: 0;
+    height: 65vh;
+    margin-top: 18vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.overview-description {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: -4;
+    padding: 5vh 5vh 5vh 5vh;
+    margin: 10vh 15vw 0 15vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    top: 16vh;
+}
+
+.overview-description h1 {
+    font-size: 6vh;
+}
+
+.overview-description p {
+    font-size: 2.6vh;
+}
+
+
+/* car-display.component.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: calc(100vw);
+    position: relative; 
+    font-family: 'Oswald', sans-serif;
+    margin-top: 80vh;
+}
+
+
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 30px; /* Spacing between the car elements */
+}
+
+.car-title {
+    font-size: 3em;
+}
+
+.car-year {
+    text-align: center;
+    font-size: 1.8em; /* Adjust the font size as needed */
+}
+
+/* Horizontal divider style */
+.divider {
+    height: 1px; /* Thickness of the divider */
+    width: calc(60%); /* Width is the full container plus extra */
+    background-color: white;
+    position: absolute; /* Positioned absolutely to overlay container */
+    top: 57%; /* Aligns the divider vertically in the middle */
+}
+
+.days {
+    background-color: rgb(27, 27, 27);
+    margin-top: 0vh;
+    padding-top: 4vh;
+    width: 100vw;
+}
+
+.day {
+    width: 80%;
+    height: 65vh;
+    margin: 6vh 12.5% 0 12.5%;
+    border-bottom: solid 0.3vh #e1b53d;
+    font-family: 'oswald-medium' , 'oswald', 'sans-serif';
+}
+
+.first {
+    width: 50%;
+    float:left; 
+    height: 65vh;
+}
+
+.second {
+    overflow: hidden; 
+    text-align: left;
+}
+
+.day h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 6vh;
+    color: rgb(241,184,45);
+    font-size: 3vh;
+}
+
+.day h2 {
+    color: rgb(223, 172, 42);
+    font-size: 2.7vh;
+}
+
+.day p {
+    font-size: 2.5vh;
+    color: rgb(198, 198, 198);
+}
+
+.day img {
+    height: 52vh;
+    width: 52vh;
+    border: solid 0.3vh rgb(191, 191, 191);
+    border-radius: 1vh;
+    margin: 3vh 0 3vh 6vh;
+    object-fit: cover; 
+    object-position: 50% 50%;
+}
+
+#day-two {
+    height: 80vh;
+}
+
+#day-two img {
+    margin: 12vh 0 12vh 6vh;
+}
+
+#day-four {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .overview-description {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .overview-description p {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container {
+        width: 100vw;
+        margin-top: 83vh;
+    }
+
+    .about-txt {
+        margin-top: 20vh;
+    }
+
+    .about-txt h1 {
+        font-size: 6vh;
+    }
+
+    .days {
+        padding-bottom: 10vh;
+        width: 100vw;
+    }
+
+    .day {
+        width: 100%;
+        margin: 8vh 0;
+        border-bottom: none;
+        height: auto;
+    }
+
+    .first, .second {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .day img {
+        display: none;
+        height: 0;
+    }
+
+    .day h1, .day h2 {
+        margin-top: 1vh; /* Reduced margin for the headers */
+        text-align: center;
+    }
+
+    .day h1 {
+        font-size: 3.5vh;
+    }
+
+    .day h2 {
+        font-size: 3vh;
+    }
+
+    .day p {
+        font-size: 2.7vh;
+        margin: 10px 30px 0 30px;
+        color: rgb(150, 150, 150);
+        text-align: center;
+    }
+
+    #day-two, #day-four {
+        height: auto;
+    }
+    
+    .about-txt {
+        width: 100%;
+        left: 0;
+        top: 5%;
+    }
+
+}
