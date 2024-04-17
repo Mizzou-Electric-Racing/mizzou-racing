@@ -1,0 +1,195 @@
+.container { 
+    width: 100%;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+.back-pic img{
+    width: 100%; 
+    height: 50vh;
+    position: fixed;
+    top: 16vh; 
+    object-fit: cover; 
+    object-position: 50% 50%;
+    z-index: -5;
+}
+
+.hero-txt {
+    width: 97%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(23, 23, 23);
+    text-align: center;
+    margin-top: 66vh;
+    padding: 2%;
+    padding-bottom: 6%;
+}
+
+.hero-txt p {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(213, 213, 213);
+    font-size: 23px;
+}
+
+.hero-container {
+    background-color: rgb(43, 43, 43);
+    padding: 20px;
+    width: 80%;
+    margin-left: 9%;
+    border: solid 2px rgb(224, 224, 224);
+    box-shadow: 4px 4px #b88e23;
+
+}
+
+.car-tb {
+    width: 100%;
+    position: relative;
+    height: 60vh;
+}
+
+.car-m {
+    width: 100%;
+    position: relative;
+    height: 60vh;
+}
+
+.left-m {
+    width: 60%;
+}
+
+.left-m img {
+    width: 85%;
+
+}
+
+.right-m {
+    width: 49%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 55vh;
+}
+
+.right-m h1 {
+    font-size: 10vh;
+    color: #F1B82D;
+}
+
+.left-tb {
+    width: 40%;
+}
+
+.left-tb h1 {
+    margin-left: 10%;
+    font-size: 10vh;
+    color: #F1B82D;
+    margin-top: 0vh;
+}
+
+.right-tb img {
+    width: 50%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 5vh;
+}
+
+.cars-container {
+    background-color: rgb(23, 23, 23);
+    width: 100vw;
+}
+
+.underline {
+    width: 80%;
+    height: 10vh;
+    margin-top: -60px;
+    margin-left: 10%;
+    border-top: solid 1px white;
+}
+
+.underline-right {
+    position: absolute;
+    height: 10vh;
+    width: 70%;
+    margin-left: 15%;
+    top: 37%;
+    border-top: solid 1px white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width */
+        padding: 0; /* Remove padding if any */
+    }
+
+    .cars-container {
+        padding-bottom: 80vw;
+        padding-top: 100px;
+    }
+
+    .back-pic img {
+        height: 30vh; /* Reduce background image size */
+        object-position: left center;
+    }
+
+    .hero-txt {
+        width: 90vw;
+        margin-top: 45vh; /* Adjust according to the new background image height */
+        padding: 5%;
+        font-size: 18px; /* Smaller font size for readability */
+    }
+
+    .hero-container {
+        padding: 10px;
+        width: 95%; /* Slightly narrower to allow some spacing */
+        margin: 0 auto; /* Centering */
+    }
+
+    .hero-txt p {
+        font-size: 16px; /* Smaller text for mobile */
+    }
+
+    .car-tb, .car-m {
+        height: auto; /* Adjust height to be auto so it scales with content */
+    }
+
+    .left-m, .right-m, .left-tb {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .left-m img, .right-tb img {
+        width: 100%; /* Make images full width */
+        right: 0;
+        margin-top: 100px;
+    }
+
+    .right-m h1, .left-tb h1 {
+        font-size: 6vh; /* Adjust heading sizes for mobile */
+        text-align: center;
+        margin: 0;
+        margin-top: 10vh;
+    }
+
+    .right-m h1 {
+        margin-top: 90vw;
+    }
+
+    .left-m img{
+        margin-top: 120vw;
+
+    }
+
+    .underline, .underline-right {
+        display: none;
+    }
+
+    .hero-container {
+        background-color: rgb(43, 43, 43);
+        padding: 20px;
+        width: 70%;
+        margin-left: 10%;
+        border: solid 2px rgb(224, 224, 224);
+        box-shadow: 4px 4px #b88e23;
+    }
+}
+

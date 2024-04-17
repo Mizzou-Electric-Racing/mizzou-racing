@@ -1,0 +1,167 @@
+
+.back-pic img{
+    width: 100vw; 
+    height: 50vh;
+    position: fixed;
+    top: 16vh; 
+    object-fit: cover; 
+    object-position: 50% 50%;
+    z-index: -5;
+}
+
+.team-info {
+    padding: 16px;
+    text-align: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    color: rgb(212, 212, 212);
+    position: relative;
+    margin-top: 65vh;
+    font-family: 'oswald-medium' , 'oswald', 'sans-serif';
+}
+
+.info {
+    background-color: rgb(23, 23, 23);
+    width: 100vw;
+    padding-bottom: 4vh;
+}
+
+.first-team {
+    width: 70%;
+    float:left;
+}
+
+.first-team img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 5vh;
+    height: 60vh;
+}
+
+.second-team {
+    position: relative;
+    overflow: hidden; 
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 5vh;
+    height: 40vh;
+    margin-top: 28vh;
+    font-size: 2.7vh; 
+}
+
+.second-team p {
+    font-size: 3vh;
+}
+
+.second-text {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.card {
+    box-shadow: 5px 5px #b38b26; 
+    border: solid 2px white;
+    padding: 16px;
+    text-align: center;
+    background-color: #1c1c1c;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    color: rgb(180, 180, 180);
+    position: relative;
+    height: 40vh;
+    margin-top: 5vh;
+    font-family: 'oswald-medium' , 'oswald', 'sans-serif';
+}
+
+.first {
+    width: 300px;
+    float:left; 
+}
+
+.first img {
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.second {
+    overflow: hidden; 
+    text-align: left;
+    padding-left: 50px;
+    font-size: 3vh;
+    position: absolute;
+    top: 3vh;
+    left: 40vh;
+}
+
+.second p {
+    margin-top: -3vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .back-pic img {
+        height: 30vh; /* Reduced height to fit smaller screens */
+        position: relative; /* Changed from fixed to avoid layout issues on scroll */
+        top: 15vh; /* Resetting position for mobile */
+        object-position: 20%;
+    }
+
+    .team-info {
+        margin-left: 5%; /* Reduced margin for smaller screens */
+        margin-right: 5%;
+        font-size: 4vw; /* Dynamic font size based on viewport width */
+        margin-top: 15vh; /* Adjusted to align better after the smaller back-pic */
+    }
+
+    .info {
+        padding-bottom: 2vh;
+    }
+
+    .first-team, .second-team {
+        width: 100%; /* Full width for mobile devices */
+        float: none; /* Disable floating for a linear layout */
+    }
+
+    .first-team img, .first img {
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+
+    .second-team {
+        padding-left: 5%; /* Reduce padding for smaller screens */
+        margin-top: 0; /* Adjust top margin to remove excessive space */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .second-text {
+        position: relative; /* Changing position to relative for better flow on mobile */
+        font-size: 4vw; /* Responsive font size */
+    }
+
+    .card {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto; /* Allow height to expand based on content */
+    }
+
+    .first {
+        width: 100%; /* Full width for image container */
+        float: none; /* Remove float for linear layout */
+    }
+
+    .first img {
+        width: 100%; /* Full width images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .second {
+        position: relative; /* Change to relative for stacking properly */
+        top: 0;
+        left: 0;
+        padding-left: 5%;
+        font-size: 5vw; /* Responsive text size */
+    }
+}
