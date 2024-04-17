@@ -1,6 +1,6 @@
 <div class="container">
     <div class="left">
-        <img (click)="goToHome()" src="../../assets/logos/darkModeLogo.png">
+        <img (click)="goToHome()" src="../../assets/white-logo.png">
     </div>
     <div class="hamburger">
         <div (click)="toggleMenu()">
@@ -9,25 +9,40 @@
     </div>
     <div class="right" [class.active]="menuActive">
         <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">Home</a>
-        <a routerLink="/history" routerLinkActive="active-link" (click)="closeMenu()">History</a>
+        <div class="dropdown">
+            <a routerLink="#" routerLinkActive="active-link" (click)="closeMenu()">About Us</a>
+            <div class="dropdown-content">
+                <a routerLink="/history" routerLinkActive="active-link" (click)="closeMenu()">EV History</a>
+                <a routerLink="/ic-history" routerLinkActive="active-link" (click)="closeMenu()">IC History</a>
+                <a routerLink="/meet-the-team" routerLinkActive="active-link" (click)="closeMenu()">Meet the Team</a>
+                <a routerLink="/electronics" routerLinkActive="active-link" (click)="closeMenu()">FAQ</a>
+            </div>
+        </div>
         <div class="dropdown">
             <a routerLink="/aerodynamics" routerLinkActive="active-link" (click)="closeMenu()">Subteams</a>
             <div class="dropdown-content">
                 <a routerLink="/aerodynamics" routerLinkActive="active-link" (click)="closeMenu()">Aerodynamics</a>
                 <a routerLink="/brakes-controls" routerLinkActive="active-link" (click)="closeMenu()">Brakes & Controls</a>
-                <a routerLink="/electronics" routerLinkActive="active-link" (click)="closeMenu()">Electronics</a>
-                <a routerLink="/powertrain" routerLinkActive="active-link" (click)="closeMenu()">Powertrain</a>
                 <a routerLink="/vehicle-dynamics" routerLinkActive="active-link" (click)="closeMenu()">Vehicle Dynamics</a>
+                <a routerLink="/electronics" routerLinkActive="active-link" (click)="closeMenu()">Electronics</a>
+                <a routerLink="/powertrain" routerLinkActive="active-link" (click)="closeMenu()">Powertrain (IC)</a>
+                <a routerLink="/high-voltage" routerLinkActive="active-link" (click)="closeMenu()">High Voltage (EV)</a>
             </div>
         </div>
         <div class="dropdown">
             <a routerLink="/competition" routerLinkActive="active-link" (click)="closeMenu()">Competition</a>
             <div class="dropdown-content">
-                <a routerLink="/competition" routerLinkActive="active-link" (click)="closeMenu()">Competition Overview</a>
-                <a routerLink="/june-2023" routerLinkActive="active-link" (click)="closeMenu()">June 2023</a>
+                <a routerLink="/competition" routerLinkActive="active-link" (click)="closeMenu()">Combustion</a>
+                <a routerLink="/ev-comp-overview" routerLinkActive="active-link" (click)="closeMenu()">Electric</a>
             </div>
         </div>
-        <a routerLink="/sponsors" routerLinkActive="active-link" (click)="closeMenu()">Sponsors</a>
+        <div class="dropdown">
+            <a routerLink="/sponsors" routerLinkActive="active-link" (click)="closeMenu()">Sponsors</a>
+            <div class="dropdown-content">
+                <a routerLink="/sponsors" routerLinkActive="active-link" (click)="closeMenu()">Combustion</a>
+                <a routerLink="/sponsors" routerLinkActive="active-link" (click)="closeMenu()">Electric</a>
+            </div>
+        </div>
         <a routerLink="/photo-gallery" routerLinkActive="active-link" (click)="closeMenu()">Photo Gallery</a>
     </div>
 </div>

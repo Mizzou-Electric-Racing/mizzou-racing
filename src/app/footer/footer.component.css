@@ -2,14 +2,17 @@
     display: flex;
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    width: 100%;
+    width: calc(100vw - 2px);
+    color: white;
+    position: relative;
 }
 
 .block {
     flex: 1;
     height: 29vh;
-    background-color: rgb(193, 193, 193);
-    border-top: solid 2px black;
+    background-color: rgb(0, 0, 0);
+    border-top: solid 1px #F1B82D;
+    border-bottom: solid 1px #F1B82D;
 }
 
 h3 {
@@ -32,10 +35,10 @@ p {
 
 /* Borders for middle and outside blocks */
 #outside-left {
-    border-right: solid 0.3vh black;
+    border-right: solid 1px #F1B82D;
 }
 #outside-right {
-    border-left: solid 0.3vh black;
+    border-left: solid 1px #F1B82D;
 }
 
 #outside-right img {
@@ -45,16 +48,55 @@ p {
 
 
 .footer-txt {
-    margin-top: 5vh;
+    margin-top: 6vh;
 }
 
 span {
-    color: #ab8628;
+    color: white;
     font-size: 2vh;
 }
 
-#email-txt {
-    margin-top: 5vh;
+#email-txt img {
+    width: 75%;
+}
+
+#email-txt p {
+    margin-top: 40px;
+}
+
+.contact-left {
+    width: 60%; 
+    margin-top: 6vh;
+    text-align: left;
+    line-height: 10px;
+}
+
+.contact-left .top{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-left .bottom{
+    margin-left: 30px;
+}
+
+.contact-right {
+    width: 20%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+}
+
+.contact-right .top img {
+    position: absolute;
+    top: -10%;
+}
+
+.contact-right .bottom img {
+    position: absolute;
+    top: 70%;
 }
 
 /* Mobile Responsive - Stacking Blocks Vertically */
@@ -64,7 +106,7 @@ span {
     }
     /* Removing borders for mobile */
     .block {
-        border: solid 1px black;
+        border: solid 1px #F1B82D;
     }
 
     .footer-txt {
@@ -73,6 +115,22 @@ span {
 
     #email-txt {
         margin-top: 15px;
+    }
+
+    .contact-left {
+        width: 80%;
+    }
+
+    .contact-right .top img {
+        position: absolute;
+        top: 95%;
+        right: 20%;
+    }
+    
+    .contact-right .bottom img {
+        position: absolute;
+        top: 125%;
+        right: 20%;
     }
 }
 

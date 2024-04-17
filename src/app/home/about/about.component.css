@@ -8,17 +8,23 @@
     padding-top: 15vh;
     padding-bottom: 10vh;
     border: solid 2px white;
+    z-index: 5;
     box-shadow: 1vh 1vh #7f610d;
+    margin-top:100vh;
 }
 #narrow {
-    width: 45vh;
+    width: 60vh;
     text-align: center;
 }
 
 #narrow h1 {
-    font-size: 5vh;
+    font-size: 7vh;
     font-family: 'Roboto', sans-serif;
     color: #f1bd2f;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 10% 10% 10% 10%;
 }
 
 #wide {
@@ -50,6 +56,8 @@ and (max-width: 1200px)
         padding-bottom: 0px;
         border-right: none;
         width: 100%;
+        margin-left: 0;
+        padding-left: 0;
         text-align: center;
     }
 

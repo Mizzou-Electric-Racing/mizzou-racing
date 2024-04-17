@@ -4,10 +4,11 @@
     font-family: 'Oswald', sans-serif;
     padding: 9px 0 9px 0;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    height: 14vh;
+    left: 0;
     transition: 0.5s;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .left img{
@@ -20,7 +21,7 @@
 }
 
 .container a.active-link {
-    color: rgb(219, 219, 219);
+    color: #F1B82D;
     text-decoration: underline;
     transition: 0.3s;
 }
@@ -32,13 +33,13 @@
 .container a {
     margin-left: 2vw;
     text-decoration: none;
-    color: #F1B82D;
+    color: white;
     font-size: 2.8vh;
     line-height: 14vh;
 }
 
 .container img {
-    width: 45vh;
+    height: 13vh;
 }
 
 .container img:hover {
@@ -52,7 +53,7 @@
 
 .scrolled {
     transition: 0.5s;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -145,12 +146,8 @@
         text-decoration: none;
     }
 
-    .container img {
-        width: 45%;
-    }
-
     .container {
-        height: 100px
+        height: 14vh;
     }
 
     .dropdown-content a {

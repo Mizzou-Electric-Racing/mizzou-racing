@@ -28,6 +28,11 @@ import { SubTeamFourComponent } from './sub-teams/sub-team-four/sub-team-four.co
 import { SubTeamFiveComponent } from './sub-teams/sub-team-five/sub-team-five.component';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { CountdownComponent } from './countdown/countdown.component';
+import { SubTeamSixComponent } from './sub-teams/sub-team-six/sub-team-six.component';
+import { EvCompOverviewComponent } from './competition/ev-comp-overview/ev-comp-overview.component';
+import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
+import { IcHistoryComponent } from './ic-history/ic-history.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +60,11 @@ import { CalendarComponent } from './calendar/calendar.component';
     SubTeamFiveComponent,
     BottomBarComponent,
     CalendarComponent,
+    CountdownComponent,
+    SubTeamSixComponent,
+    EvCompOverviewComponent,
+    MeetTheTeamComponent,
+    IcHistoryComponent,
   ],
   imports: [
     BrowserModule,

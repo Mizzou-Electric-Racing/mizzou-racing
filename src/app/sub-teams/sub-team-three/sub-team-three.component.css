@@ -8,15 +8,17 @@
     align-items: center; /* Vertically center the child content */
     height: 100%;
     margin-top: 20vh;
-    background-color: rgb(25, 25, 25);;
-    padding: 10vh;
+    background-color: rgb(25, 25, 25);
+    padding: 2vw;
+    margin-top: 70vh;
+    width: 96vw;
 }
 
 /* Styles for the inner "description-content" div */
 .description-content {
     background-color: rgb(44, 44, 44); /* Background color for the inner content box */
     padding: 40px; /* Space around the text */
-    max-width: 800px; /* Maximum width of the inner box */
+    width: 95%;
     text-align: center; /* Centering the text horizontally */
     box-shadow: 5px 5px #ae8723;
     border: solid 2px white;
@@ -32,59 +34,160 @@
 
 /* Style for the paragraph */
 .description-content p {
-    font-size: 2.4vh; /* Font size for the paragraph */
+    font-size: 3vh; /* Font size for the paragraph */
     line-height: 1.5; /* Space between the lines of the paragraph */
     font-family: 'Oswald', sans-serif;
     color: rgb(200, 200, 200);
 }
 
 .images {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    overflow: hidden;
-    width: 100%; /* full width of parent */
-    height: 50vh; /* or whatever height you want */
-    margin-top: 0px;
-    background-color: #F1B82D;
-    padding: 2px 0 2px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px; /* This will create space between the images */
+    margin-bottom: 20px; /* This adds some space at the bottom of the grid */
+    padding: 6vw;
+    width: 88vw;
+    background-color: rgb(25, 25, 25);
 }
-
+  
 .images img {
-    width: 33%; /* adjusting for four images and a 1px border between each */
-    height: 100%; /* full height of the container */
-    object-fit: cover; /* this will crop the image to cover the area without distorting */
-    transition: 0.1s;
-    margin: 0;
-    border: solid 2px #F1B82D;
+    width: 100%;
+    height: 50vh;
+    display: block; /* This ensures there's no extra space below the image */
 }
-
-
-.images img:hover {
-    transform: scale(1.05); /* gives a slight zoom effect on hover */
-    transition: 0.2s;
-}
+  
 
 #team-leader {
-    margin-top: 0px;
+    margin-top: -20px;
 }
 
 #team-leader h1 {
-    font-size: 3.7vh;
+    font-size: 5vh;
+    text-align: left;
 }
 
-@media only screen 
-and (max-width: 600px)
- {
-    .images {
-        height: 30vh;
-    }
+.sub-header img {
+    position: fixed;
+    top: 20vh;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -5;
+    object-fit: cover;
+}
 
-    .description-content {
-        padding: 2vh;
+#lead-name {
+    color: white;
+}
+
+.lead-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    margin-bottom: 20px; /* Space below the lead-info section */
+}
+
+.lead-info p {
+    font-size: 3.5vh;
+}
+  
+.lead-info .left {
+    flex-basis: 30%; /* Assigns a base width for each div */
+    /* Using less than 50% to account for any potential padding/margin that may be added */
+}
+
+.lead-info .right {
+    flex-basis: 68%;
+}
+  
+  /* Optional: If you want to ensure some space between the two divs */
+.lead-info .left {
+    margin-right: 4%; /* Adds some space to the right of the left div */
+}
+
+.quote {
+    width: 94vw;
+    background-color: rgb(25, 25, 25);
+    color: rgb(207, 207, 207);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    padding: 3vw;
+}
+
+.quote-content {
+    width: 50%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+    .sub-header img {
+        height: 50vh;  /* Reduce the header image height */
+        position: fixed;  /* Change position to flow with document */
     }
 
     .description {
-        padding: 5vh 2vh 5vh 2vh;
+        margin-top: 70vh;  /* Adjust top margin to account for the smaller header */
+        padding: 5% 3%;  /* Increase padding for better touch interaction */
+        width: calc(100vw - 6%);  /* Reduce width to allow some margin on the sides */
     }
- }
+
+    .description-content {
+        padding: 5%;  /* Increase internal padding for better readability */
+        width: 100%;  /* Full width to use available space */
+    }
+
+    .description-content h1, .description-content p {
+        font-size: 4vh;  /* Reduce font size for headings and paragraphs */
+    }
+
+    .images {
+        grid-template-columns: 1fr;  /* Stack images vertically */
+        padding: 3%;  /* Reduce padding to maximize space */
+        width: calc(100vw - 6%);
+    }
+
+    .images img {
+        height: auto;  /* Adjust height to maintain aspect ratio */
+    }
+
+    .lead-info {
+        flex-direction: column;  /* Stack information vertically */
+        align-items: center;  /* Center-align the items */
+    }
+
+    .lead-info .left, .lead-info .right {
+        flex-basis: 100%;  /* Make each section full width */
+        margin-right: 0;  /* Remove right margin */
+        text-align: center;  /* Center text for readability */
+    }
+
+    .lead-info .right {
+        margin-top: 20px;  /* Add some space between text blocks */
+    }
+
+    .quote-content {
+        width: 90%;  /* Increase width for quote content */
+        margin-left: 5%;  /* Center the quote content */
+    }
+
+    .quote-content h1 {
+        font-size: 3vh;
+    }
+
+    .left img {
+        width: 80%;
+    }
+
+    .right p {
+        font-size: 2.3vh;
+    }
+
+    #sub-team-name {
+        font-size: 2.5vh;
+    }
+
+    .description-content p {
+        font-size: 2.3vh;
+    }
+}
