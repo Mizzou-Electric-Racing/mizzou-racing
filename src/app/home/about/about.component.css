@@ -30,14 +30,13 @@
 #wide {
     flex: 1;
     text-align: left;
-    border-left: solid 1px rgb(183, 183, 183);
 }
 
 #wide h4 {
-    margin-right: 10vh;
-    margin-left: 2vw;
-    margin-top: 5%;
     font-size: 2.5vh;
+    padding-left: 2vw;
+    margin: 3vh 10vh 0 0;
+    border-left: solid 1px rgb(183, 183, 183);
 }
 
 /* mobile only styles when the device is 0-600px in maximum width */

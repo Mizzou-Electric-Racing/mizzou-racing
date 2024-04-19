@@ -33,6 +33,7 @@ import { SubTeamSixComponent } from './sub-teams/sub-team-six/sub-team-six.compo
 import { EvCompOverviewComponent } from './competition/ev-comp-overview/ev-comp-overview.component';
 import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
 import { IcHistoryComponent } from './ic-history/ic-history.component';
+import { SubTeamSevenComponent } from './sub-teams/sub-team-seven/sub-team-seven.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { IcHistoryComponent } from './ic-history/ic-history.component';
     EvCompOverviewComponent,
     MeetTheTeamComponent,
     IcHistoryComponent,
+    SubTeamSevenComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,7 @@ import { SubTeamSixComponent } from './sub-teams/sub-team-six/sub-team-six.compo
 import { EvCompOverviewComponent } from './competition/ev-comp-overview/ev-comp-overview.component';
 import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
 import { IcHistoryComponent } from './ic-history/ic-history.component';
+import { SubTeamSevenComponent } from './sub-teams/sub-team-seven/sub-team-seven.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'high-voltage', component: SubTeamSixComponent, data: { animationState: 'Two' },},
   { path: 'meet-the-team', component: MeetTheTeamComponent, data: { animationState: 'Two' },},
   { path: 'ic-history', component: IcHistoryComponent, data: { animationState: 'Two' },},
+  { path: 'business', component: SubTeamSevenComponent, data: { animationState: 'Two' },},
   {path:'photo-gallery/:car/:id',component:PhotoDetailComponent}
 ];
 
